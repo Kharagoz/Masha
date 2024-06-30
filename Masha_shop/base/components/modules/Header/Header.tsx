@@ -18,25 +18,26 @@ const Header = () => {
                 </div>
             <ul className='Header__links list-reset'>
                 <li className='Header__links__item'>
-                    <button className='Header__links__item__btn Header__links__item__btn__search' />
-                     
+                <button
+              className='btn-reset Header__links__item__btn Header__links__item__btn--search'/>
+  
                 </li>
-                <li className='header__links__item'>
+                <li className='Header__links__item'>
                     <Link
                     href='/favorites'
-                    className='header__links__item__btn header__links__item__btn--favorites'>
+                    className='Header__links__item__btn Header__links__item__btn--favorites'>
                     </Link>
                 </li>
-                <li className='header__links__item'>
+                <li className='Header__links__item'>
                     <Link
                     href='/card'
-                    className='header__links__item__btn header__links__item__btn--card'>
+                    className='Header__links__item__btn Header__links__item__btn--card'>
                     </Link>
                 </li>
-                <li className='header__links__item'>
+                <li className='Header__links__item'>
                     <Link
                     href='/login'
-                    className='header__links__item__btn header__links__item__btn--login'>
+                    className='Header__links__item__btn Header__links__item__btn--login'>
                     </Link>
                 </li>
             </ul>

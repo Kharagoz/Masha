@@ -144,6 +144,74 @@
   }
 }
 
+.category-section {
+  margin-top: 4rem;
+
+  .category-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .category-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    .category-item {
+      position: relative;
+      width: 48%;
+      overflow: hidden;
+      cursor: pointer;
+
+      .category-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .category-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1rem;
+        transform: translateY(100%);
+        transition: transform 0.3s ease-in-out;
+
+        .category-name {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+
+        .category-description {
+          font-size: 0.9rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .category-price {
+          font-size: 1.1rem;
+          font-weight: bold;
+        }
+      }
+
+      &:hover {
+        .category-image {
+          transform: scale(1.1);
+        }
+
+        .category-info {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+
+
 
 
   

@@ -4,13 +4,35 @@ import Link from 'next/link';
 import Logo from '@/components/elements/Logo/Logo';
 import DropdownMenu from '@/components/elements/DropdownMenu/DropdownMenu.tsx/DropdownMenu';
 import React, { useState } from 'react';
-
+import { $searchModal, openMenu, openSearchModal } from '@/context/modals'
+import { useStore } from 'effector-react'
+import fr
+import { 
+    addOverflowHiddenToBody,
+    handleCloseSearchModal 
+} from '@/lib/utils/common';
 
 const Header = () => {
+    const searchModal = useStore($searchModal)
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const handleOpenMenu = () => {
+        addOverflowHiddenToBody()
+        openMenu()
+    }
+    const handleOpenSearchModal = () => {
+        openSearchModal()
+        addOverflowHiddenToBody()
+    }
 
     return (
         <header className='header'>
+            <div className= ('header__search-overlay'$(
+                searchModal ? 'overlay-active' : ''
+            }'}
+            onClick={handleCloseSearchModal}
+
+            )
+            />
             <div className='container Header__container'>
                 <div className='Header__left'>
                     <div

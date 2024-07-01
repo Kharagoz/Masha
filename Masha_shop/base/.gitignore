@@ -8,6 +8,7 @@
 *.rar
 *.gz
 *.tar
+*.svg
 
 # dependencies
 /node_modules

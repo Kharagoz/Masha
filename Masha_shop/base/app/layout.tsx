@@ -5,7 +5,7 @@ import "./globalStyles/globals.css"
 import './globalStyles/footer.css'
 import Layout from "@/components/layouts/Layouts";
 import './globalStyles/Header.css'
-
+import './globalStyles/search-modal.css'
 
 export const metadata: Metadata = {
   title: "Polina",

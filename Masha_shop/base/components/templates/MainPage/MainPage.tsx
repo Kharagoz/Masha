@@ -1,14 +1,16 @@
-import CategorySection from "@/components/modules/MainPage/Categories/Categories";
-import Hero from "@/components/modules/MainPage/Hero/Hero";
-import HeroContext from "@/components/modules/MainPage/Hero/Hero-context";
 import React from "react";
+import Hero from "@/components/modules/MainPage/Hero/Hero";
+import {HeroSection} from "@/components/modules/MainPage/Hero/Hero-context";
+import CategorySection from "@/components/modules/MainPage/Categories/Categories";
+import PhraseSection from "@/components/modules/MainPage/Phrase/Phrase";
 
 function MainPage() {
-    return (
+  return (
         <main>
-            <Hero />
-            <HeroContext />
-            <CategorySection />
+        <Hero />
+        <HeroSection />
+        <CategorySection />
+        <PhraseSection />
         </main>
     );
 }
